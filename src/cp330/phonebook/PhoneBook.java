@@ -25,14 +25,47 @@ public class PhoneBook implements IPhoneBook {
         friends = new ArrayList<>();
         colleagues = new ArrayList<>();
     }
-
     @Override
-    public void processCommand() throws FileNotFoundException {
-
+    public void processCommand(String line) throws FileNotFoundException {
+        String command = line.split("\\s+")[0];
+        switch (command) {
+            case "save":
+                saveToFile();
+                break;
+            case "load":
+                loadFromFile();
+                break;
+            case "add":
+                add(line);
+                break;
+            case "help":
+                help();
+                break;
+            case "list":
+                list(line);
+                break;
+            case "remove":
+                remove(line);
+                break;
+            case "show":
+                show(line);
+                break;
+            case "search":
+                search(line);
+                break;
+            case "sortName":
+                sortName();
+                break;
+            case "sortEmail":
+                sortEmail();
+                break;
+            default:
+                System.out.println("Unknown command. Type help for list of valid commands.");
+                break;
         }
-    }
 
-    @Override
+
+        @Override
     public void saveToFile() throws FileNotFoundException {
 
     }
@@ -51,6 +84,9 @@ public class PhoneBook implements IPhoneBook {
 
     @Override
     public void help() {
+            System.out.println("================Phonebook Menu========");
+            System.out.println("Available methods are:");
+
 
 
     }
