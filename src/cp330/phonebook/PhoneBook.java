@@ -75,7 +75,18 @@ public class PhoneBook implements IPhoneBook {
 
 
     @Override
-    public void add() {
+    public void add(String command) {
+        String[] s = splitCommand(command);
+        //expect properly formed command of 6 strings
+        if (s.length != 6) {
+            System.out.println("Incorrect command format. Command should be in format 'add PHONE_NUMBER NAME EMAIL RINGTONE CONTACT_TYPE(FAMILY, FRIENDS, COLLEAGUES)'");
+            return;
+        }
+            }
+
+    private String[] splitCommand(String line) {
+        return line.split("\\s+");
+            }
         }
     }
 
@@ -110,6 +121,9 @@ public class PhoneBook implements IPhoneBook {
     public void remove() {
 
 
+
+
+
         @Override
         public void show () {
         }
@@ -125,4 +139,7 @@ public class PhoneBook implements IPhoneBook {
         @Override
         public void sortEmail () {
         }
+
+
     }
+
