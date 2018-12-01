@@ -86,8 +86,16 @@ public class PhoneBook implements IPhoneBook {
     public void help() {
             System.out.println("================Phonebook Menu========");
             System.out.println("Available methods are:");
-
-
+            System.out.println("save - Saves phonebook entries to file ");
+            System.out.println("load - Loads phonebook entries from file");
+            System.out.println("add phone name email ringtone contactType(family, friends, colleagues) - Adds phone number to phonebook");
+            System.out.println("help - Displays application help menu");
+            System.out.println("list group - List all phonebook entries. Group is optional and can be family, friends, colleagues. If group is not provided entire phonebook is listed");
+            System.out.println("remove phone - Removes entrie from phonebook");
+            System.out.println("show phone - Prints provided phone entry");
+            System.out.println("search name - Search for contact by  name");
+            System.out.println("sortName - Sorts contact by name");
+            System.out.println("sortEmail - Sorts contact by email");
 
     }
 
