@@ -82,12 +82,30 @@ public class PhoneBook implements IPhoneBook {
             System.out.println("Incorrect command format. Command should be in format 'add PHONE_NUMBER NAME EMAIL RINGTONE CONTACT_TYPE(FAMILY, FRIENDS, COLLEAGUES)'");
             return;
         }
+        String phoneNumber = s[1];
+        String name = s[2];
+        String email = s[3];
+        String ringtone = s[4];
+        try {
+            ContactType contactType = ContactType.valueOf(s[5]);
+
+        }
+            }
+
+         private void createAndAddContact(String phoneNumber, String name, String email, String ringtone, ContactType contactType) {
+            Contact contact = new Contact(phoneNumber, name, email, ringtone, contactType );
+            contacts.put(phoneNumber, contact);
+            switch (contactType) {
+                case friends:
+            }
+            }
+
             }
 
     private String[] splitCommand(String line) {
         return line.split("\\s+");
             }
-        }
+
     }
 
 
