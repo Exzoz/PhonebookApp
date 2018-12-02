@@ -88,19 +88,35 @@ public class PhoneBook implements IPhoneBook {
         String ringtone = s[4];
         try {
             ContactType contactType = ContactType.valueOf(s[5]);
+            createAndAddContact(phoneNumber, name, email, ringtone, contactType);
+            System.out.println("Contact add to Phonebook");
+        } catch (IllegalArgumentException e) {
+            System.out.println("Invalid Contact Type. Expected type of contact: Friends, Family, Colleagues ")
+        }
 
         }
+            
+
+         private void createAndAddContact(String phoneNumber, String name, String email, String ringtone, ContactType contactType)
+            {
+                Contact contact = new Contact(phoneNumber, name, email, ringtone, contactType);
+                contacts.put(phoneNumber, contact);
+                switch (contactType) {
+                    case friends:
+                        friends.add(contact);
+                        break;
+                    case family:
+                        family.add(contact);
+                        break;
+                    case colleagues:
+                        colleagues.add(contact);
+                        break;
+                    default:
+                        break;
+                }
             }
 
-         private void createAndAddContact(String phoneNumber, String name, String email, String ringtone, ContactType contactType) {
-            Contact contact = new Contact(phoneNumber, name, email, ringtone, contactType );
-            contacts.put(phoneNumber, contact);
-            switch (contactType) {
-                case friends:
-            }
-            }
 
-            }
 
     private String[] splitCommand(String line) {
         return line.split("\\s+");
