@@ -149,6 +149,25 @@ public class PhoneBook implements IPhoneBook {
         if (s.length == 1) {
             System.out.println("Listing All Phonebook Contact Information");
             Iterator it = contacts.entrySet().iterator();
+            while (it.hasNext()) {
+                Map.Entry<String, Contact> pair = (Map.Entry) it.next();
+                System.out.println(pair.getValue());
+            }
+        } else {
+            String group = s[1];
+            switch (group) {
+                case "Friends":
+                    printList(friends);
+                    break;
+                case "Family":
+                    printList(family);
+                    break;
+                case "Colleagues":
+                    printList(colleagues);
+                    break;
+                default:
+                    System.out.println("Invalid Group Name. Expected Groups: Friends, Family, Colleagues")
+            }
         }
 
         }
