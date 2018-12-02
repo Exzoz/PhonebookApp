@@ -166,10 +166,16 @@ public class PhoneBook implements IPhoneBook {
                     printList(colleagues);
                     break;
                 default:
-                    System.out.println("Invalid Group Name. Expected Groups: Friends, Family, Colleagues")
+                    System.out.println("Invalid Group Name. Expected Groups: Friends, Family, Colleagues");
             }
         }
 
+        }
+
+        private void printList(List<Contact> list) {
+            for (Contact contact: list) {
+                System.out.println(contact);
+            }
         }
 
 
@@ -179,7 +185,8 @@ public class PhoneBook implements IPhoneBook {
 
 
     @Override
-    public void show() {
+    public void show(String command) {
+        String[] s = splitCommand(command);
         }
 
     @Override

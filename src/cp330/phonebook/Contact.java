@@ -8,6 +8,10 @@ public class Contact {
     private ContactType contactType;
 
     public Contact(String phoneNumber, String name, String email, String ringtone, ContactType contactType) {
-        this.phoneNumber
+        this.phoneNumber = phoneNumber;
+        this.name = name;
+        this.email = email;
+        this.ringtone = ringtone;
+        this.contactType = contactType;
     }
 }
