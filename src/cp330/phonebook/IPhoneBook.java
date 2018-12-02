@@ -21,18 +21,18 @@ public interface IPhoneBook {
     /**
      * Displays help menu
      */
-    public void help();
+     void help();
 
     /**
      * List all or group of phonebook entries
      */
-    public void list(String command);
+     void list(String command);
 
     /**
      * Displays phonebook entry with provided phone number
      * @param command
      */
-    public void show(String command);
+     void show(String command);
 
 
 

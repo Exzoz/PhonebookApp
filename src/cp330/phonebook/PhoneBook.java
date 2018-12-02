@@ -73,6 +73,11 @@ public class PhoneBook implements IPhoneBook {
 
     @Override
     public void loadFromFile() throws FileNotFoundException {
+        File file = new File("phonebook.txt");
+        Scanner input = new Scanner(file);
+        while (input.hasNextLine()) {
+        }
+    }
 
 
     @Override

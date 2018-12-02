@@ -14,4 +14,8 @@ public class Contact {
         this.ringtone = ringtone;
         this.contactType = contactType;
     }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
 }
