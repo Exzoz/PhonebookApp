@@ -63,6 +63,7 @@ public class PhoneBook implements IPhoneBook {
                 System.out.println("Unknown command. Type help for list of valid commands.");
                 break;
         }
+        }
 
 
         @Override
@@ -97,8 +98,8 @@ public class PhoneBook implements IPhoneBook {
         }
 
 
-         private void createAndAddContact(String phoneNumber, String name, String email, String ringtone, ContactType contactType)
-            {
+         private void createAndAddContact(String phoneNumber, String name, String email, String ringtone, ContactType contactType) {
+
                 Contact contact = new Contact(phoneNumber, name, email, ringtone, contactType);
                 contacts.put(phoneNumber, contact);
                 switch (contactType) {
@@ -122,8 +123,6 @@ public class PhoneBook implements IPhoneBook {
         return line.split("\\s+");
             }
 
-    }
-
 
 
 
@@ -146,34 +145,40 @@ public class PhoneBook implements IPhoneBook {
 
     @Override
     public void list(String command) {
+        String[] s = splitCommand(command);
+        if (s.length == 1) {
+            System.out.println("Listing All Phonebook Contact Information");
+            Iterator it = contacts.entrySet().iterator();
         }
-    }
 
+        }
 
 
     @Override
     public void remove() {
+            }
 
 
-
-
-
-        @Override
-        public void show () {
+    @Override
+    public void show() {
         }
 
-        @Override
-        public void search () {
+    @Override
+    public void search() {
+
         }
 
-        @Override
-        public void sortName () {
+    @Override
+    public void sortName() {
+
         }
 
-        @Override
-        public void sortEmail () {
+    @Override
+    public void sortEmail() {
+
         }
 
 
+    }
     }
 

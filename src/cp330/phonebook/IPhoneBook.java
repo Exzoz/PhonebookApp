@@ -23,6 +23,12 @@ public interface IPhoneBook {
      */
     public void help();
 
+    /**
+     * List all or group of phonebook entries
+     */
+    public void list(String command);
+
+
 
 
 
