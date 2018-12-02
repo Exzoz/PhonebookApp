@@ -92,7 +92,7 @@ public class PhoneBook implements IPhoneBook {
             createAndAddContact(phoneNumber, name, email, ringtone, contactType);
             System.out.println("Contact add to Phonebook");
         } catch (IllegalArgumentException e) {
-            System.out.println("Invalid Contact Type. Expected type of contact: Friends, Family, Colleagues ")
+            System.out.println("Invalid Contact Type. Expected type of contact: Friends, Family, Colleagues ");
         }
 
         }
@@ -116,14 +116,6 @@ public class PhoneBook implements IPhoneBook {
                         break;
                 }
             }
-
-
-
-    private String[] splitCommand(String line) {
-        return line.split("\\s+");
-            }
-
-
 
 
     @Override
@@ -194,7 +186,10 @@ public class PhoneBook implements IPhoneBook {
         String phoneNumber = s[1];
         Contact contact = contacts.get(phoneNumber);
         if (contact == null) {
-
+            System.out.println("Failed To Find:" + phoneNumber);
+        } else {
+            System.out.println(contact);
+        }
 
         }
 
@@ -212,6 +207,12 @@ public class PhoneBook implements IPhoneBook {
     public void sortEmail() {
 
         }
+
+
+    private String[] splitCommand(String line) {
+        return line.split("\\s+");
+        }
+
 
 
     }
