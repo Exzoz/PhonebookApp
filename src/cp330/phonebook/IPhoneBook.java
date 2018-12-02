@@ -12,6 +12,18 @@ public interface IPhoneBook {
      */
     void processCommand(String line) throws FileNotFoundException;
 
+    /**
+     * Adds new entry to the phonebook
+     * @param command
+     */
+    public void add(String command);
+
+    /**
+     * Displays help menu
+     */
+    public void help();
+
+
 
 
 }
