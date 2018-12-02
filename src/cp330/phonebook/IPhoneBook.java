@@ -16,7 +16,7 @@ public interface IPhoneBook {
      * Adds new entry to the phonebook
      * @param command
      */
-    public void add(String command);
+     void add(String command);
 
     /**
      * Displays help menu
@@ -28,6 +28,11 @@ public interface IPhoneBook {
      */
     public void list(String command);
 
+    /**
+     * Displays phonebook entry with provided phone number
+     * @param command
+     */
+    public void show(String command);
 
 
 

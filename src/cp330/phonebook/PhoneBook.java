@@ -187,6 +187,15 @@ public class PhoneBook implements IPhoneBook {
     @Override
     public void show(String command) {
         String[] s = splitCommand(command);
+        if (s.length != 2) {
+            System.out.println("Incorrect command format. Command should be in format 'show PHONE_NUMBER'");
+            return;
+        }
+        String phoneNumber = s[1];
+        Contact contact = contacts.get(phoneNumber);
+        if (contact == null) {
+
+
         }
 
     @Override
