@@ -68,6 +68,8 @@ public class PhoneBook implements IPhoneBook {
 
         @Override
     public void saveToFile() throws FileNotFoundException {
+        try (PrintWriter out = new PrintWriter("phonebook.txt")) {
+            Iterator
 
     }
 
@@ -76,7 +78,13 @@ public class PhoneBook implements IPhoneBook {
         File file = new File("phonebook.txt");
         Scanner input = new Scanner(file);
         while (input.hasNextLine()) {
+            String[] c = input.nextLine().split(",");
+            String phoneNumber = c[0];
+            String name = c[1];
+            String email = c[2];
+            createAndAddContact(phoneNumber, name, email, ringtone, contactType);
         }
+        System.out.println("Phonebook Loaded From File");
     }
 
 
