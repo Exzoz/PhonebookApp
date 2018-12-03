@@ -13,6 +13,18 @@ public interface IPhoneBook {
     void processCommand(String line) throws FileNotFoundException;
 
     /**
+     * Saves phonebook entries to the file
+     * @throws FileNotFoundException
+     */
+    void saveToFile() throws FileNotFoundException;
+
+    /**
+     * Loads phonebook entries saved in file into memory
+     * @throws FileNotFoundException
+     */
+    void loadFromFile() throws FileNotFoundException;
+
+    /**
      * Adds new entry to the phonebook
      * @param command
      */

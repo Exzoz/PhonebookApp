@@ -65,7 +65,6 @@ public class PhoneBook implements IPhoneBook {
         }
         }
 
-
         @Override
     public void saveToFile() throws FileNotFoundException {
         try (PrintWriter out = new PrintWriter("phonebook.txt")) {
@@ -76,6 +75,7 @@ public class PhoneBook implements IPhoneBook {
             }
     }
         System.out.println("Phonebook Saved");
+    }
 
     @Override
     public void loadFromFile() throws FileNotFoundException {
@@ -191,8 +191,13 @@ public class PhoneBook implements IPhoneBook {
 
 
     @Override
-    public void remove() {
-            }
+    public void remove(String command) {
+        String[] s = splitCommand(command);
+        if (s.length != 2) {
+            System.out.println();
+        }
+    }
+
 
 
     @Override
@@ -228,9 +233,11 @@ public class PhoneBook implements IPhoneBook {
                 results.add(pair.getValue());
             }
         }
-        for (Iterator iterator)
-
+        for (Iterator iterator = results.iterator(); iterator.hasNext();) {
+            Contact contact = (Contact) iterator.next();
+            System.out.println(contact);
         }
+    }
 
     @Override
     public void sortName() {
