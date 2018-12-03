@@ -215,7 +215,16 @@ public class PhoneBook implements IPhoneBook {
     @Override
     public void search(String command) {
         String[] s = splitCommand(command);
-        if ()
+        if (s.length != 2) {
+            System.out.println("Incorrect command format. Command should be in format 'search NAME'");
+            return;
+        }
+        String name = s[1];
+        List<Contact> results = new ArrayList();
+        Iterator it = contacts.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry<String, Contact> pair = (Map.Entry) it.next();
+        }
 
         }
 
