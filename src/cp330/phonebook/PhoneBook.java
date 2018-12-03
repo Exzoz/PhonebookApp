@@ -224,7 +224,11 @@ public class PhoneBook implements IPhoneBook {
         Iterator it = contacts.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry<String, Contact> pair = (Map.Entry) it.next();
+            if (pair.getValue().getName().contains(name)) {
+                results.add(pair.getValue());
+            }
         }
+        for (Iterator iterator)
 
         }
 
