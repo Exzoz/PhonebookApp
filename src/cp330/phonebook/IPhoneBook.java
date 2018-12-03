@@ -34,6 +34,12 @@ public interface IPhoneBook {
      */
      void show(String command);
 
+    /**
+     * Search and displays all phonebook entries found with name search
+     * @param command
+     */
+    void search(String command);
+
 
 
 

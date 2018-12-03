@@ -72,10 +72,10 @@ public class PhoneBook implements IPhoneBook {
             Iterator it = contacts.entrySet().iterator();
             while (it.hasNext()) {
                 Map.Entry<String, Contact> pair = (Map.Entry) it.next();
-                System.println(p)
+                System.out.println(pair.getValue().toString());
             }
-
     }
+        System.out.println("Phonebook Saved");
 
     @Override
     public void loadFromFile() throws FileNotFoundException {
@@ -213,7 +213,9 @@ public class PhoneBook implements IPhoneBook {
         }
 
     @Override
-    public void search() {
+    public void search(String command) {
+        String[] s = splitCommand(command);
+        if ()
 
         }
 
