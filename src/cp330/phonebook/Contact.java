@@ -23,25 +23,45 @@ public class Contact {
         return phoneNumber + "," + name + "," + email + "," + ringtone + "," + contactType;
     }
 
-        public String getPhoneNumber () {
+    public String getPhoneNumber() {
             return phoneNumber;
         }
 
-        public void setPhoneNumber (String phoneNumber){
+        public void setPhoneNumber(String phoneNumber){
             this.phoneNumber = phoneNumber;
         }
 
-        public String getName () {
+        public String getName() {
             return name;
         }
 
-        public void setName (String name){
+        public void setName(String name) {
             this.name = name;
         }
 
-        public ContactType getContactType () {
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getRingtone() {
+        return ringtone;
+    }
+
+    public void setRingtone(String ringtone) {
+        this.ringtone = ringtone;
+    }
+
+
+    public ContactType getContactType() {
             return contactType;
         }
 
+    public void setContactType(ContactType contactType) {
+        this.contactType = contactType;
     }
-}
+
+    }
