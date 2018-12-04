@@ -16,11 +16,11 @@ public class Contact {
     }
 
     public String toString() {
-        return "Contact: phoneNumber=" + phoneNumber + "; name=" + name + "; email=" + email + "; ringtone= + ringtone + "; contactType=" + contactType;
+        return "Contact: phoneNumber=" + phoneNumber + "; name=" + name + "; email=" + email + "; ringtone=" + ringtone + "; contactType=" + contactType;
     }
 
     public String toStringForFile() {
-        return phoneNumber + , + name + "," + email + "," + ringtone + "," + contactType;
+        return phoneNumber + "," + name + "," + email + "," + ringtone + "," + contactType;
 
     public String getPhoneNumber() {
         return phoneNumber;
