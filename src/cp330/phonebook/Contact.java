@@ -21,26 +21,27 @@ public class Contact {
 
     public String toStringForFile() {
         return phoneNumber + "," + name + "," + email + "," + ringtone + "," + contactType;
-
-    public String getPhoneNumber() {
-        return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-   public ContactType getContactType() {
-        return contactType;
+        public String getPhoneNumber () {
+            return phoneNumber;
         }
 
+        public void setPhoneNumber (String phoneNumber){
+            this.phoneNumber = phoneNumber;
+        }
 
+        public String getName () {
+            return name;
+        }
+
+        public void setName (String name){
+            this.name = name;
+        }
+
+        public ContactType getContactType () {
+            return contactType;
+        }
+
+    }
 }

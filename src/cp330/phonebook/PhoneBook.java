@@ -205,7 +205,20 @@ public class PhoneBook implements IPhoneBook {
             // removing from the phonebook
             contacts.remove(phoneNumber);
             // removing from specific category
-            TODO
+            switch (contact.getContactType().toString()) {
+                case "friends":
+                    friends.remove(contact);
+                    break;
+                case "family":
+                    family.remove(contact);
+                    break;
+                case "colleagues":
+                    colleagues.remove(contact);
+                    break;
+                default:
+                    System.out.println("Unexpected Error. Unknown Contact Category");
+            }
+        }
     }
 
 
