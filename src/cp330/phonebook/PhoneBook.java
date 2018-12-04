@@ -194,8 +194,18 @@ public class PhoneBook implements IPhoneBook {
     public void remove(String command) {
         String[] s = splitCommand(command);
         if (s.length != 2) {
-            System.out.println();
+            System.out.println("Incorrect command format. Command should be in format 'remove PHONE_NUMBER' ");
+            return;
         }
+        String phoneNumber = s[1];
+        Contact contact = contacts.get(phoneNumber);
+        if (contact == null) {
+            System.out.println("Attempted to delete contact that does not exist");
+        } else {
+            // removing from the phonebook
+            contacts.remove(phoneNumber);
+            // removing from specific category
+            TODO
     }
 
 
@@ -241,11 +251,13 @@ public class PhoneBook implements IPhoneBook {
 
     @Override
     public void sortName() {
+        List
 
         }
 
     @Override
     public void sortEmail() {
+        List
 
         }
 
