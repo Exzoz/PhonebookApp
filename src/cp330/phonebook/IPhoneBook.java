@@ -41,6 +41,13 @@ public interface IPhoneBook {
      void list(String command);
 
     /**
+     * Removes phonebook entry
+     * @param command
+     */
+     void remove(String command);
+
+
+    /**
      * Displays phonebook entry with provided phone number
      * @param command
      */
@@ -52,7 +59,14 @@ public interface IPhoneBook {
      */
     void search(String command);
 
+    /**
+     * Sort and display phonebook by name
+     */
+    void sortName();
 
-
+    /**
+     * Sort and display phonebook by email
+     */
+    void sortEmail();
 
 }
