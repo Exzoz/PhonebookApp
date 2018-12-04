@@ -71,7 +71,7 @@ public class PhoneBook implements IPhoneBook {
             Iterator it = contacts.entrySet().iterator();
             while (it.hasNext()) {
                 Map.Entry<String, Contact> pair = (Map.Entry) it.next();
-                System.out.println(pair.getValue().toString());
+                System.out.println(pair.getValue().toStringForFile());
             }
     }
         System.out.println("Phonebook Saved");
