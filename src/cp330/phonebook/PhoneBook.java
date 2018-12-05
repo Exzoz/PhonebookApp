@@ -274,11 +274,15 @@ public class PhoneBook implements IPhoneBook {
 
     @Override
     public void sortEmail() {
-        
+        List<Entry<String, Contact>> list = new ArrayList(contacts.size());
+        list.addAll(contacts.entrySet());
+        Collections.sort(list, new DescendingByEmail());
+        for (Entry<String, Contact> contact : list) {
+            System.out.println(contact.getValue());
+
         }
     }
-
-
+    
     private String[] splitCommand(String line) {
         return line.split("\\s+");
         }
