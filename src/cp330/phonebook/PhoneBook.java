@@ -140,14 +140,14 @@ public class PhoneBook implements IPhoneBook {
     @Override
     public void help() {
             System.out.println("========Phonebook Menu========");
-            System.out.println("Available methods are:");
+            System.out.println("Available Commands:");
             System.out.println("save - Saves Phonebook Entries To File ");
             System.out.println("load - Loads Phonebook Entries From File");
             System.out.println("add phone name email ringtone contactType(family, friends, colleagues) - Adds phone number to phonebook");
             System.out.println("help - Displays Application Help Menu");
             System.out.println("list group - List All Phhonebook Entries by Category. If Category Is Not Provided Entire Phonebook Is Listed");
             System.out.println("remove phone - Removes Entry From Phonebook");
-            System.out.println("show phone - Prints Provided Phonenumber Entry");
+            System.out.println("show phone - Prints Provided Phone Numer Entry");
             System.out.println("search name - Search For Entry By Name");
             System.out.println("sortName - Sorts Contact By Name");
             System.out.println("sortEmail - Sorts Contact By Email");
