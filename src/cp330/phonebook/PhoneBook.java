@@ -67,7 +67,7 @@ public class PhoneBook implements IPhoneBook {
 
         @Override
     public void saveToFile() throws FileNotFoundException {
-        try (PrintWriter out = new PrintWriter("phonebook.txt")) {
+        try (PrintWriter out = new PrintWriter("phonebook.rtf")) {
             Iterator it = contacts.entrySet().iterator();
             while (it.hasNext()) {
                 Map.Entry<String, Contact> pair = (Map.Entry) it.next();
@@ -79,7 +79,7 @@ public class PhoneBook implements IPhoneBook {
 
     @Override
     public void loadFromFile() throws FileNotFoundException {
-        File file = new File("phonebook.txt");
+        File file = new File("phonebook.rtf");
         Scanner input = new Scanner(file);
         while (input.hasNextLine()) {
             String[] c = input.nextLine().split(",");
@@ -139,18 +139,18 @@ public class PhoneBook implements IPhoneBook {
 
     @Override
     public void help() {
-            System.out.println("================Phonebook Menu========");
+            System.out.println("========Phonebook Menu========");
             System.out.println("Available methods are:");
-            System.out.println("save - Saves phonebook entries to file ");
-            System.out.println("load - Loads phonebook entries from file");
+            System.out.println("save - Saves Phonebook Entries To File ");
+            System.out.println("load - Loads Phonebook Entries From File");
             System.out.println("add phone name email ringtone contactType(family, friends, colleagues) - Adds phone number to phonebook");
-            System.out.println("help - Displays application help menu");
-            System.out.println("list group - List all phonebook entries. Group is optional and can be family, friends, colleagues. If group is not provided entire phonebook is listed");
-            System.out.println("remove phone - Removes entrie from phonebook");
-            System.out.println("show phone - Prints provided phone entry");
-            System.out.println("search name - Search for contact by  name");
-            System.out.println("sortName - Sorts contact by name");
-            System.out.println("sortEmail - Sorts contact by email");
+            System.out.println("help - Displays Application Help Menu");
+            System.out.println("list group - List All Phhonebook Entries by Category. If Category Is Not Provided Entire Phonebook Is Listed");
+            System.out.println("remove phone - Removes Entry From Phonebook");
+            System.out.println("show phone - Prints Provided Phonenumber Entry");
+            System.out.println("search name - Search For Entry By Name");
+            System.out.println("sortName - Sorts Contact By Name");
+            System.out.println("sortEmail - Sorts Contact By Email");
 
     }
 
