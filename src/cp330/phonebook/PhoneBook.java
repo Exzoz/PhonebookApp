@@ -264,15 +264,19 @@ public class PhoneBook implements IPhoneBook {
 
     @Override
     public void sortName() {
-        List
-
+        List<Entry<String, Contact>> list = new ArrayList(contacts.size());
+        list.addAll(contacts.entrySet());
+        Collections.sort(list, new DescendingByName());
+        for (Entry<String, Contact> contact : list) {
+            System.out.println(contact.getValue());
         }
+    }
 
     @Override
     public void sortEmail() {
-        List
-
+        
         }
+    }
 
 
     private String[] splitCommand(String line) {
