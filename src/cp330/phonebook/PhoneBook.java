@@ -170,12 +170,7 @@ public class PhoneBook implements IPhoneBook {
     public void list(String command) {
         String[] s = splitCommand(command);
         if (s.length == 1) {
-            System.out.println("Listing All Phonebook Contact Information");
-            Iterator it = contacts.entrySet().iterator();
-            while (it.hasNext()) {
-                Map.Entry<String, Contact> pair = (Map.Entry) it.next();
-                System.out.println(pair.getValue());
-            }
+            sortName();
         } else {
             String group = s[1];
             switch (group) {
