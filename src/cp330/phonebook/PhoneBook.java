@@ -109,7 +109,7 @@ public class PhoneBook implements IPhoneBook {
         try {
             ContactType contactType = ContactType.valueOf(s[5]);
             createAndAddContact(phoneNumber, name, email, ringtone, contactType);
-            System.out.println("Contact add to Phonebook");
+            System.out.println("Contact added to Phonebook");
         } catch (IllegalArgumentException e) {
             System.out.println("Invalid Contact Type. Expected type of contact: Friends, Family, Colleagues ");
         }
@@ -124,6 +124,7 @@ public class PhoneBook implements IPhoneBook {
                 switch (contactType) {
                     case friends:
                         friends.add(contact);
+                        Collections.sort(friends, new Desc)
                         break;
                     case family:
                         family.add(contact);
