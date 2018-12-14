@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55aa4052-cc96-4289-a895-49573887f7e6" name="Default" comment="alphabetization updates to createAndAddContact method">
-      <change afterPath="$PROJECT_DIR$/src/cp330/phonebook/RingtoneType.java" afterDir="false" />
+    <list default="true" id="55aa4052-cc96-4289-a895-49573887f7e6" name="Default" comment="made enum for RingtoneType; setting up 3 possible ringtone options next">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,14 +55,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5530" />
-          <entry key="txt" value="101" />
+          <entry key="java" value="5563" />
+          <entry key="txt" value="181" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5530" />
-          <entry key="PLAIN_TEXT" value="101" />
+          <entry key="JAVA" value="5563" />
+          <entry key="PLAIN_TEXT" value="181" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -79,11 +79,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+            <state relative-caret-position="274">
+              <caret line="107" column="41" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#10001#10002#0" expanded="true" />
@@ -93,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/RingtoneType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -242,8 +242,8 @@
         <option value="$PROJECT_DIR$/src/cp330/phonebook/DescendingByName.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/DescendingByEmail.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/DescendingByNameContact.java" />
-        <option value="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/RingtoneType.java" />
+        <option value="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" />
       </list>
     </option>
   </component>
@@ -254,7 +254,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
+    <option name="x" value="4" />
+    <option name="y" value="31" />
     <option name="width" value="784" />
     <option name="height" value="877" />
   </component>
@@ -322,7 +323,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544760052150" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544761993064" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -394,7 +395,7 @@
       <workItem from="1542477721370" duration="1601000" />
       <workItem from="1543538695042" duration="298000" />
       <workItem from="1543539039724" duration="4033000" />
-      <workItem from="1543613979447" duration="26811000" />
+      <workItem from="1543613979447" duration="27602000" />
     </task>
     <task id="LOCAL-00001" summary="updates in order to add alphabetization listing">
       <created>1544758400768</created>
@@ -410,14 +411,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544758989055</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="made enum for RingtoneType; setting up 3 possible ringtone options next">
+      <created>1544760083926</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544760083926</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70151000" />
+    <option name="totallyTimeSpent" value="70942000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="4" y="31" width="784" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.16284987" />
@@ -435,9 +443,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3299363" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5078684" side_tool="true" visible="true" weight="0.30963856" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50808626" side_tool="true" visible="true" weight="0.32738853" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.49213162" visible="true" weight="0.30963856" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.49191374" visible="true" weight="0.32738853" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -459,7 +467,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updates in order to add alphabetization listing" />
     <MESSAGE value="alphabetization updates to createAndAddContact method" />
-    <option name="LAST_COMMIT_MESSAGE" value="alphabetization updates to createAndAddContact method" />
+    <MESSAGE value="made enum for RingtoneType; setting up 3 possible ringtone options next" />
+    <option name="LAST_COMMIT_MESSAGE" value="made enum for RingtoneType; setting up 3 possible ringtone options next" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Contact.java" />
@@ -549,18 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#10001#10002#0" expanded="true" />
-            <element signature="e#10046#10047#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/ContactType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -572,6 +569,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="107" column="41" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10001#10002#0" expanded="true" />
+            <element signature="e#10046#10047#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

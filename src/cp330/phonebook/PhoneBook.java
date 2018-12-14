@@ -86,9 +86,9 @@ public class PhoneBook implements IPhoneBook {
             String phoneNumber = c[0];
             String name = c[1];
             String email = c[2];
-            String ringtone = c[3];
+            RingtoneType ringtoneType = RingtoneType.valueOf(c[3]);
             ContactType contactType = ContactType.valueOf(c[4]);
-            createAndAddContact(phoneNumber, name, email, ringtone, contactType);
+            createAndAddContact(phoneNumber, name, email, ringtoneType, contactType);
         }
         System.out.println("Phonebook Loaded From File");
     }
@@ -105,7 +105,7 @@ public class PhoneBook implements IPhoneBook {
         String phoneNumber = s[1];
         String name = s[2];
         String email = s[3];
-        String ringtone = s[4];
+        RingtoneType ringtoneType = null;
         try {
             ContactType contactType = ContactType.valueOf(s[5]);
             createAndAddContact(phoneNumber, name, email, ringtone, contactType);
