@@ -107,17 +107,26 @@ public class PhoneBook implements IPhoneBook {
         String email = s[3];
         RingtoneType ringtoneType = null;
         try {
-            ContactType contactType = ContactType.valueOf(s[5]);
-            createAndAddContact(phoneNumber, name, email, ringtone, contactType);
+            ringtoneType = RingtoneType.valueOf(s[4]);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Invalid Ringtone Type. Input ding, chord, or pulse");
+            return;
+        }
+
+        ContactType contactType = null;
+        try {
+            contactType = ContactType.valueOf(s[5]);
             System.out.println("Contact added to Phonebook");
         } catch (IllegalArgumentException e) {
             System.out.println("Invalid Contact Type. Expected type of contact: Friends, Family, Colleagues ");
+            return;
+        }
+        createAndAddContact(phoneNumber, name, email, ringtoneType, contactType);
+
         }
 
-        }
 
-
-         private void createAndAddContact(String phoneNumber, String name, String email, String ringtone, ContactType contactType) {
+         private void createAndAddContact(String phoneNumber, String name, String email, RingtoneType ringtone, ContactType contactType) {
 
                 Contact contact = new Contact(phoneNumber, name, email, ringtone, contactType);
                 contacts.put(phoneNumber, contact);
