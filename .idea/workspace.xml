@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55aa4052-cc96-4289-a895-49573887f7e6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cp330/phonebook/DescendingByNameContact.java" afterDir="false" />
+    <list default="true" id="55aa4052-cc96-4289-a895-49573887f7e6" name="Default" comment="updates in order to add alphabetization listing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cp330/phonebook/DescendingByEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cp330/phonebook/DescendingByEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cp330/phonebook/DescendingByName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cp330/phonebook/DescendingByName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -58,12 +55,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5503" />
+          <entry key="java" value="5507" />
+          <entry key="txt" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5503" />
+          <entry key="JAVA" value="5507" />
+          <entry key="PLAIN_TEXT" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -80,11 +79,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="111" column="60" selection-start-line="111" selection-start-column="60" selection-end-line="111" selection-end-column="60" />
+            <state relative-caret-position="130">
+              <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#10001#10002#0" expanded="true" />
@@ -155,7 +154,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/DescendingByNameContact.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -231,10 +230,10 @@
         <option value="$PROJECT_DIR$/src/cp330/phonebook/Main.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/Contact.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/IPhoneBook.java" />
-        <option value="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/DescendingByName.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/DescendingByEmail.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/DescendingByNameContact.java" />
+        <option value="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" />
       </list>
     </option>
   </component>
@@ -244,9 +243,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="58" />
-    <option name="y" value="88" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="784" />
     <option name="height" value="877" />
   </component>
@@ -314,7 +312,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544758267501" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544758949028" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -386,15 +384,23 @@
       <workItem from="1542477721370" duration="1601000" />
       <workItem from="1543538695042" duration="298000" />
       <workItem from="1543539039724" duration="4033000" />
-      <workItem from="1543613979447" duration="25594000" />
+      <workItem from="1543613979447" duration="26124000" />
     </task>
+    <task id="LOCAL-00001" summary="updates in order to add alphabetization listing">
+      <created>1544758400768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544758400768</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68934000" />
+    <option name="totallyTimeSpent" value="69464000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="784" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.16284987" />
@@ -406,15 +412,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32880846" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.788269" visible="true" weight="0.28915662" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.788269" weight="0.28915662" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3484163" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3299363" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.21173105" side_tool="true" visible="true" weight="0.28915662" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50808626" side_tool="true" visible="true" weight="0.32738853" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49284694" weight="0.30963856" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.49191374" visible="true" weight="0.32738853" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -432,6 +438,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updates in order to add alphabetization listing" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates in order to add alphabetization listing" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Contact.java" />
@@ -496,18 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="111" column="60" selection-start-line="111" selection-start-column="60" selection-end-line="111" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#10001#10002#0" expanded="true" />
-            <element signature="e#10046#10047#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/DescendingByEmail.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -536,6 +534,18 @@
             <element signature="imports" expanded="true" />
             <element signature="e#278#279#0" expanded="true" />
             <element signature="e#311#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10001#10002#0" expanded="true" />
+            <element signature="e#10046#10047#0" expanded="true" />
           </folding>
         </state>
       </provider>

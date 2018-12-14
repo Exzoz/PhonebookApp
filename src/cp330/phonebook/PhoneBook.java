@@ -124,13 +124,15 @@ public class PhoneBook implements IPhoneBook {
                 switch (contactType) {
                     case friends:
                         friends.add(contact);
-                        Collections.sort(friends, new Desc)
+                        Collections.sort(friends, new DescendingByNameContact());
                         break;
                     case family:
                         family.add(contact);
+                        Collections.sort(friends, new DescendingByNameContact());
                         break;
                     case colleagues:
                         colleagues.add(contact);
+                        Collections.sort(friends, new DescendingByNameContact());
                         break;
                     default:
                         break;
