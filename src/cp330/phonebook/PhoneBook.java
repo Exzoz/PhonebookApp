@@ -244,6 +244,7 @@ public class PhoneBook implements IPhoneBook {
         if (contact == null) {
             System.out.println("Failed To Find:" + phoneNumber);
         } else {
+            displayHeaders();
             System.out.println(contact);
         }
 
@@ -292,12 +293,79 @@ public class PhoneBook implements IPhoneBook {
         }
     }
 
+    @Override
+    public void addGroup(String command) {
+        String[] s = splitCommand(command);
+        if (s.length != 3) {
+            System.out.println("Incorrect command format. Command ");
+            return;
+        }
+        String contactType = s[1];
+        String phoneNumber = s[2];
+        Contact contact = contacts.get(phoneNumber);
+        if (contact != null) {
+            try {
+                ContactType type = ContactType.valueOf(contactType);
+                contact.setContactType(type);
+                addToGroup(contact);
+            } catch(Exception e) {
+                System.out.println("Unkown contactType. Available contactTypes: family, friends, colleagues, none");
+            }
+        } else {
+            System.out.println("Failed to find contact with phoneNumber: " + phoneNumber);
+        }
+    }
+
+    @Override
+    public void addRingtone(String command) {
+        String[] s = splitCommand(command);
+        if (s.length != 3) {
+            System.out.println("Incorrect command format. Command should be in format 'addEmail RINGTONE(ding, chord, pulse, none) PHONE_NUMBER'");
+            return;
+        }
+        String ringtone = s[1];
+        String phoneNumber = s[2];
+        Contact contact = contacts.get(phoneNumber);
+        if (contact != null) {
+            try {
+                RingtoneType ringtoneType = RingtoneType.valueOf(ringtone);
+                contact.setRingtoneType(ringtoneType);
+            } catch(Exception e) {
+                System.out.println("Unknown ringtoneType. Available ringtoneTypes: ding, chord, pulse, none");
+            }
+        } else {
+            System.out.println("Failed to find contact with phoneNumber: " + phoneNumber);
+        }
+    }
+
+    @Override
+    public void addEmail(String command) {
+        String[] s = splitCommand(command);
+        if (s.length != 3) {
+            System.out.println("Incorrect command format. Command should be in format 'addEmail EMAIL PHONE_NUMBER)'");
+            return;
+        }
+        String email = s[1];
+        String phoneNumber = s[2];
+        Contact contact = contacts.get(phoneNumber);
+        if (contact != null) {
+            contact.setEmail(email);
+        } else {
+            System.out.println("Failed to find contact with phoneNumber: " + phoneNumber);
+        }
+    }
+
+
     private String[] splitCommand(String line) {
         return line.split("\\s+");
         }
 
-
-
+    private void displayHeaders() {
+        System.out.println("Name  Phone Number  Email  Ringtone  Category");
     }
+}
+
+
+
 
 
