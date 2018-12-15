@@ -69,4 +69,19 @@ public interface IPhoneBook {
      */
     void sortEmail();
 
+    /**
+     * Add group to the contact
+     */
+     void addGroup(String line);
+
+    /**
+     * Add ringtone to the contact
+     */
+     void addRingtone(String line);
+
+    /**
+     * Add email to the contact
+     */
+     void addEmail(String line);
+
 }
