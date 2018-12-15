@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55aa4052-cc96-4289-a895-49573887f7e6" name="Default" comment="updates">
+    <list default="true" id="55aa4052-cc96-4289-a895-49573887f7e6" name="Default" comment="changing strategy for adding contacts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" afterDir="false" />
     </list>
@@ -55,14 +55,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6036" />
-          <entry key="txt" value="271" />
+          <entry key="java" value="6358" />
+          <entry key="txt" value="308" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6036" />
-          <entry key="PLAIN_TEXT" value="271" />
+          <entry key="JAVA" value="6358" />
+          <entry key="PLAIN_TEXT" value="308" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -82,12 +82,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+            <state relative-caret-position="528">
+              <caret line="144" column="30" selection-start-line="144" selection-start-column="30" selection-end-line="144" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#10001#10002#0" expanded="true" />
-                <element signature="e#10046#10047#0" expanded="true" />
+                <element signature="e#9492#9493#0" expanded="true" />
+                <element signature="e#9537#9538#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -233,7 +233,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-32" />
+    <option name="x" value="-82" />
     <option name="y" value="23" />
     <option name="width" value="816" />
     <option name="height" value="877" />
@@ -302,7 +302,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544843019645" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544843394092" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -374,7 +374,7 @@
       <workItem from="1542477721370" duration="1601000" />
       <workItem from="1543538695042" duration="298000" />
       <workItem from="1543539039724" duration="4033000" />
-      <workItem from="1543613979447" duration="31583000" />
+      <workItem from="1543613979447" duration="31995000" />
     </task>
     <task id="LOCAL-00001" summary="updates in order to add alphabetization listing">
       <created>1544758400768</created>
@@ -425,14 +425,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544841304418</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="changing strategy for adding contacts">
+      <created>1544843065915</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1544843065915</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74923000" />
+    <option name="totallyTimeSpent" value="75335000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-32" y="23" width="816" height="877" extended-state="0" />
+    <frame x="-82" y="23" width="816" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.16284987" />
@@ -479,7 +486,8 @@
     <MESSAGE value="updates for ringtone" />
     <MESSAGE value="updates to list method" />
     <MESSAGE value="updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates" />
+    <MESSAGE value="changing strategy for adding contacts" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing strategy for adding contacts" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Contact.java" />
@@ -585,12 +593,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+        <state relative-caret-position="528">
+          <caret line="144" column="30" selection-start-line="144" selection-start-column="30" selection-end-line="144" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10001#10002#0" expanded="true" />
-            <element signature="e#10046#10047#0" expanded="true" />
+            <element signature="e#9492#9493#0" expanded="true" />
+            <element signature="e#9537#9538#0" expanded="true" />
           </folding>
         </state>
       </provider>

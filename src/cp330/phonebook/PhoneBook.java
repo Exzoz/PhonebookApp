@@ -107,56 +107,46 @@ public class PhoneBook implements IPhoneBook {
     @Override
     public void add(String command) {
         String[] s = splitCommand(command);
-        //expect properly formed command of 6 strings
-        if (s.length != 6) {
+        //expect properly formed command of 3 strings
+        if (s.length != 3) {
             System.out.println("Incorrect command format. Command should be in format 'add PHONE_NUMBER NAME EMAIL RINGTONE CONTACT_TYPE(FAMILY, FRIENDS, COLLEAGUES)'");
             return;
         }
-        String phoneNumber = s[1];
-        String name = s[2];
-        String email = s[3];
-        RingtoneType ringtoneType = null;
-        try {
-            ringtoneType = RingtoneType.valueOf(s[4]);
-        } catch (IllegalArgumentException e) {
-            System.out.println("Invalid Ringtone Type. Input ding, chord, or pulse");
-            return;
-        }
-
-        ContactType contactType = null;
-        try {
-            contactType = ContactType.valueOf(s[5]);
-            System.out.println("Contact added to Phonebook");
-        } catch (IllegalArgumentException e) {
-            System.out.println("Invalid Contact Type. Expected type of contact: Friends, Family, Colleagues ");
-            return;
-        }
-        createAndAddContact(phoneNumber, name, email, ringtoneType, contactType);
+        String name = s[1];
+        String phoneNumber = s[2];
+        createAndAddContact(phoneNumber, name, "n/a", RingtoneType.none, ContactType.none);
 
         }
 
 
          private void createAndAddContact(String phoneNumber, String name, String email, RingtoneType ringtone, ContactType contactType) {
 
-                Contact contact = new Contact(phoneNumber, name, email, ringtone, contactType);
-                contacts.put(phoneNumber, contact);
-                switch (contactType) {
+             Contact contact = new Contact(phoneNumber, name, email, ringtone, contactType);
+             contacts.put(phoneNumber, contact);
+             addToGroup(contact);
+         }
+
+         private void addToGroup(Contact contact) {
+            if (contact.getContactType() != null) {
+                switch (contact.getContactType()) {
                     case friends:
                         friends.add(contact);
                         Collections.sort(friends, new DescendingByNameContact());
                         break;
                     case family:
                         family.add(contact);
-                        Collections.sort(friends, new DescendingByNameContact());
+                        Collections.sort(family, new DescendingByNameContact());
                         break;
                     case colleagues:
                         colleagues.add(contact);
-                        Collections.sort(friends, new DescendingByNameContact());
+                        Collections.sort(colleagues, new DescendingByNameContact());
                         break;
                     default:
                         break;
                 }
             }
+         }
+
 
 
     @Override
