@@ -110,12 +110,13 @@ public class PhoneBook implements IPhoneBook {
         String[] s = splitCommand(command);
         //expect properly formed command of 3 strings
         if (s.length != 3) {
-            System.out.println("Incorrect command format. Command should be in format 'add PHONE_NUMBER NAME EMAIL RINGTONE CONTACT_TYPE(FAMILY, FRIENDS, COLLEAGUES)'");
+            System.out.println("Incorrect command format. Command should be in format 'add NAME PHONE_NUMBER)'");
             return;
         }
         String name = s[1];
         String phoneNumber = s[2];
         createAndAddContact(phoneNumber, name, "n/a", RingtoneType.none, ContactType.none);
+        System.out.println("Contact Added Successfully!");
 
     }
 
@@ -156,9 +157,9 @@ public class PhoneBook implements IPhoneBook {
         System.out.println("save - Saves Phonebook Entries To File ");
         System.out.println("load - Loads Phonebook Entries From File");
         System.out.println("add - Adds Name + Phone Number to Phonebook");
-        System.out.println("addGroup - Adds  ");
+        System.out.println("addGroup - Adds Category to Entry ");
         System.out.println("addRingtone - Adds RingtoneEither ding, chord, pulse to entry");
-        System.out.println("addEmail - Adds email to entry")
+        System.out.println("addEmail - Adds email to entry");
         System.out.println("help - Displays Application Help Menu");
         System.out.println("list - List All Phhonebook Entries by Group. If Category Is Not Provided Entire Phonebook Is Listed");
         System.out.println("remove - Removes Phone Number Entry From Phonebook");
@@ -311,6 +312,7 @@ public class PhoneBook implements IPhoneBook {
                 ContactType type = ContactType.valueOf(contactType);
                 contact.setContactType(type);
                 addToGroup(contact);
+                System.out.println("Category Added Successfully!");
             } catch(Exception e) {
                 System.out.println("Unkown contactType. Available contactTypes: family, friends, colleagues, none");
             }
@@ -333,8 +335,9 @@ public class PhoneBook implements IPhoneBook {
             try {
                 RingtoneType ringtoneType = RingtoneType.valueOf(ringtone);
                 contact.setRingtoneType(ringtoneType);
+                System.out.println("Ringtone Added Successfully!");
             } catch(Exception e) {
-                System.out.println("Unknown ringtoneType. Available ringtoneTypes: ding, chord, pulse, none");
+                System.out.println("Unknown Type. Available Ringtones: ding, chord, pulse, none");
             }
         } else {
             System.out.println("Failed to find contact with phoneNumber: " + phoneNumber);
@@ -353,6 +356,7 @@ public class PhoneBook implements IPhoneBook {
         Contact contact = contacts.get(phoneNumber);
         if (contact != null) {
             contact.setEmail(email);
+            System.out.println("Email Added Successfully!");
         } else {
             System.out.println("Failed to find contact with phoneNumber: " + phoneNumber);
         }

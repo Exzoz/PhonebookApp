@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55aa4052-cc96-4289-a895-49573887f7e6" name="Default" comment="forgot to add none to ringtonetype enum">
+    <list default="true" id="55aa4052-cc96-4289-a895-49573887f7e6" name="Default" comment="updating help menu options">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PhonebookApp/cp330/phonebook/ContactType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PhonebookApp/cp330/phonebook/ContactType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PhonebookApp/cp330/phonebook/IPhoneBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PhonebookApp/cp330/phonebook/IPhoneBook.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,14 +55,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6958" />
-          <entry key="txt" value="563" />
+          <entry key="java" value="7266" />
+          <entry key="txt" value="589" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6958" />
-          <entry key="PLAIN_TEXT" value="563" />
+          <entry key="JAVA" value="7266" />
+          <entry key="PLAIN_TEXT" value="589" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -84,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="160" column="58" selection-start-line="160" selection-start-column="58" selection-end-line="160" selection-end-column="58" />
+            <state relative-caret-position="291">
+              <caret line="159" column="65" lean-forward="true" selection-start-line="159" selection-start-column="65" selection-end-line="159" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#10444#10445#0" expanded="true" />
@@ -150,7 +148,7 @@
         <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/ContactType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+              <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -220,8 +218,8 @@
         <option value="$PROJECT_DIR$/src/cp330/phonebook/DescendingByNameContact.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/IPhoneBook.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/Contact.java" />
-        <option value="$PROJECT_DIR$/src/cp330/phonebook/ContactType.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/RingtoneType.java" />
+        <option value="$PROJECT_DIR$/src/cp330/phonebook/ContactType.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" />
       </list>
     </option>
@@ -233,7 +231,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-53" />
+    <option name="x" value="87" />
     <option name="y" value="23" />
     <option name="width" value="816" />
     <option name="height" value="877" />
@@ -302,7 +300,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544846293371" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544849651888" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -374,7 +372,7 @@
       <workItem from="1542477721370" duration="1601000" />
       <workItem from="1543538695042" duration="298000" />
       <workItem from="1543539039724" duration="4033000" />
-      <workItem from="1543613979447" duration="34784000" />
+      <workItem from="1543613979447" duration="36896000" />
     </task>
     <task id="LOCAL-00001" summary="updates in order to add alphabetization listing">
       <created>1544758400768</created>
@@ -474,11 +472,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544845651350</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="updating help menu options">
+      <created>1544846315204</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1544846315204</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78124000" />
+    <option name="totallyTimeSpent" value="80236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -493,15 +498,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32880846" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.78755367" visible="true" weight="0.2879518" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.78683835" visible="true" weight="0.28674698" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3484163" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3299363" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.21244635" side_tool="true" visible="true" weight="0.2879518" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.21316166" side_tool="true" visible="true" weight="0.28674698" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49213162" weight="0.23493975" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4914163" weight="0.23493975" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -535,7 +540,8 @@
     <MESSAGE value="updated interfaces for new methods" />
     <MESSAGE value="updated contact object; and added &quot;none&quot; to contacttype enum" />
     <MESSAGE value="forgot to add none to ringtonetype enum" />
-    <option name="LAST_COMMIT_MESSAGE" value="forgot to add none to ringtonetype enum" />
+    <MESSAGE value="updating help menu options" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating help menu options" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Contact.java" />
@@ -625,13 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/ContactType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/RingtoneType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -639,10 +638,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/ContactType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="160" column="58" selection-start-line="160" selection-start-column="58" selection-end-line="160" selection-end-column="58" />
+        <state relative-caret-position="291">
+          <caret line="159" column="65" lean-forward="true" selection-start-line="159" selection-start-column="65" selection-end-line="159" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#10444#10445#0" expanded="true" />
