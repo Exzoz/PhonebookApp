@@ -161,7 +161,7 @@ public class PhoneBook implements IPhoneBook {
         System.out.println("addRingtone - Adds RingtoneEither ding, chord, pulse to entry");
         System.out.println("addEmail - Adds email to entry");
         System.out.println("help - Displays Application Help Menu");
-        System.out.println("list - List All Phhonebook Entries by Group. If Category Is Not Provided Entire Phonebook Is Listed");
+        System.out.println("list - List All Phonebook Entries by Group. If Category Is Not Provided Entire Phonebook Is Listed");
         System.out.println("remove - Removes Phone Number Entry From Phonebook");
         System.out.println("show - Prints Provided Phone Number Entry");
         System.out.println("search - Search For Entry By Name");
@@ -301,7 +301,7 @@ public class PhoneBook implements IPhoneBook {
     public void addGroup(String command) {
         String[] s = splitCommand(command);
         if (s.length != 3) {
-            System.out.println("Incorrect command format. Command ");
+            System.out.println("Incorrect command format. Correct format: addGroup Category Phone Number ");
             return;
         }
         String contactType = s[1];
@@ -314,10 +314,10 @@ public class PhoneBook implements IPhoneBook {
                 addToGroup(contact);
                 System.out.println("Category Added Successfully!");
             } catch(Exception e) {
-                System.out.println("Unkown contactType. Available contactTypes: family, friends, colleagues, none");
+                System.out.println("Unknown Category. Available Categories: family, friends, colleagues, none");
             }
         } else {
-            System.out.println("Failed to find contact with phoneNumber: " + phoneNumber);
+            System.out.println("Failed to find contact with Phone Number: " + phoneNumber);
         }
     }
 
