@@ -81,7 +81,7 @@ public class PhoneBook implements IPhoneBook {
             Iterator it = contacts.entrySet().iterator();
             while (it.hasNext()) {
                 Map.Entry<String, Contact> pair = (Map.Entry) it.next();
-                System.out.println(pair.getValue().toStringForFile());
+                out.println(pair.getValue().toStringForFile());
             }
         }
         System.out.println("Phonebook Saved");
@@ -165,7 +165,6 @@ public class PhoneBook implements IPhoneBook {
         System.out.println("remove - Removes Phone Number Entry From Phonebook");
         System.out.println("show - Prints Contact Entry Based On Phone Number Inputted");
         System.out.println("search - Search For Entry By Name");
-        System.out.println("sortName - Sorts Contacts By Name");
         System.out.println("sortEmail - Sorts Contacts By Email");
 
     }
