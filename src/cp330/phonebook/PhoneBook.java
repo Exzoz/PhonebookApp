@@ -254,12 +254,12 @@ public class PhoneBook implements IPhoneBook {
             System.out.println("Incorrect command format. Command should be in format 'search NAME'");
             return;
         }
-        String name = s[1];
+        String searchTerm = s[1];
         List<Contact> results = new ArrayList();
         Iterator it = contacts.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry<String, Contact> pair = (Map.Entry) it.next();
-            if (pair.getValue().getName().contains(name)) {
+            if (pair.getValue().getName().contains(searchTerm) || pair.getValue().getEmail().contains(searchTerm) || pair.getValue().getPhoneNumber().contains(searchTerm)) {
                 results.add(pair.getValue());
             }
         }

@@ -4,19 +4,19 @@ public class Contact {
     private String phoneNumber;
     private String name;
     private String email;
-    private String ringtone;
+    private RingtoneType ringtoneType;
     private ContactType contactType;
 
-    public Contact(String phoneNumber, String name, String email, String ringtone, ContactType contactType) {
+    public Contact(String phoneNumber, String name, String email, RingtoneType ringtoneType, ContactType contactType) {
         this.phoneNumber = phoneNumber;
         this.name = name;
         this.email = email;
-        this.ringtone = ringtone;
+        this.ringtoneType = ringtoneType;
         this.contactType = contactType;
     }
 
     public String toString() {
-        return "Contact: phoneNumber=" + phoneNumber + "; name=" + name + "; email=" + email + "; ringtone=" + ringtone + "; contactType=" + contactType;
+        return "Contact: Phone Number=" + phoneNumber + "; name=" + name + "; email=" + email + "; ringtone=" + ringtone + "; contactType=" + contactType;
     }
 
     public String toStringForFile() {
@@ -47,12 +47,12 @@ public class Contact {
         this.email = email;
     }
 
-    public String getRingtone() {
-        return ringtone;
+    public RingtoneType getRingtoneType() {
+        return ringtoneType;
     }
 
-    public void setRingtone(String ringtone) {
-        this.ringtone = ringtone;
+    public void setRingtoneType(RingtoneType ringtoneType) {
+        this.ringtoneType = ringtoneType;
     }
 
 
