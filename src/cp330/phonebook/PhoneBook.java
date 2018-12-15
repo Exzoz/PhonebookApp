@@ -59,6 +59,15 @@ public class PhoneBook implements IPhoneBook {
             case "sortEmail":
                 sortEmail();
                 break;
+            case "addEmail":
+                addEmail(line);
+                break;
+            case "addRingtone":
+                addRingtone(line);
+                break;
+            case "addGroup":
+                addGroup(line);
+                break;
             default:
                 System.out.println("Unknown command. Type help for list of valid commands.");
                 break;
@@ -90,6 +99,7 @@ public class PhoneBook implements IPhoneBook {
             ContactType contactType = ContactType.valueOf(c[4]);
             createAndAddContact(phoneNumber, name, email, ringtoneType, contactType);
         }
+        input.close();
         System.out.println("Phonebook Loaded From File");
     }
 
