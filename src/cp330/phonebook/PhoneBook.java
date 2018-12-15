@@ -216,23 +216,25 @@ public class PhoneBook implements IPhoneBook {
         } else {
             // removing from the phonebook
             contacts.remove(phoneNumber);
+            System.out.println("Contact Removed Successfully");
             // removing from specific group
-            switch (contact.getContactType().toString()) {
-                case "friends":
-                    friends.remove(contact);
-                    break;
-                case "family":
-                    family.remove(contact);
-                    break;
-                case "colleagues":
-                    colleagues.remove(contact);
-                    break;
-                default:
-                    System.out.println("Unexpected Error. Unknown Contact Group");
+            if (contact.getContactType() != null) {
+                switch (contact.getContactType().toString()) {
+                    case "friends":
+                        friends.remove(contact);
+                        break;
+                    case "family":
+                        family.remove(contact);
+                        break;
+                    case "colleagues":
+                        colleagues.remove(contact);
+                        break;
+                    default:
+                        break;
+                }
             }
         }
     }
-
 
 
 

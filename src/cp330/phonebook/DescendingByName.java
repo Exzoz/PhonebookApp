@@ -8,7 +8,7 @@ import java.util.Map;
 public class DescendingByName implements Comparator<Map.Entry<String, Contact>> {
 
     public int compare(final Map.Entry<String, Contact> l, final Map.Entry<String, Contact> r) {
-        return l.getValue().getEmail().compareTo(r.getValue().getName());
+        return l.getValue().getName().compareTo(r.getValue().getName());
 
     }
 

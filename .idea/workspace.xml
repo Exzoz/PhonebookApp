@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55aa4052-cc96-4289-a895-49573887f7e6" name="Default" comment="fixing issues">
+    <list default="true" id="55aa4052-cc96-4289-a895-49573887f7e6" name="Default" comment="fixing more issues">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cp330/phonebook/DescendingByName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cp330/phonebook/DescendingByName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -56,41 +56,41 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7521" />
-          <entry key="txt" value="671" />
+          <entry key="java" value="7601" />
+          <entry key="txt" value="689" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7521" />
-          <entry key="PLAIN_TEXT" value="671" />
+          <entry key="JAVA" value="7601" />
+          <entry key="PLAIN_TEXT" value="689" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="3" />
+          <entry key="java" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="4" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2196">
-              <caret line="166" column="60" lean-forward="true" selection-start-line="166" selection-start-column="60" selection-end-line="166" selection-end-column="60" />
+            <state relative-caret-position="4275">
+              <caret line="285" column="53" lean-forward="true" selection-start-line="285" selection-start-column="53" selection-end-line="285" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#10444#10445#0" expanded="true" />
-                <element signature="e#10489#10490#0" expanded="true" />
-                <element signature="e#12781#12782#0" expanded="true" />
-                <element signature="e#12864#12865#0" expanded="true" />
+                <element signature="e#12849#12850#0" expanded="true" />
+                <element signature="e#12894#12895#0" expanded="true" />
+                <element signature="e#12931#12932#0" expanded="true" />
+                <element signature="e#13014#13015#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,50 +115,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/Contact.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding>
-                <element signature="e#830#831#0" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
-                <element signature="e#918#919#0" expanded="true" />
-                <element signature="e#964#965#0" expanded="true" />
-                <element signature="e#995#996#0" expanded="true" />
-                <element signature="e#1022#1023#0" expanded="true" />
-                <element signature="e#1062#1063#0" expanded="true" />
-                <element signature="e#1094#1095#0" expanded="true" />
-                <element signature="e#1126#1127#0" expanded="true" />
-                <element signature="e#1154#1155#0" expanded="true" />
-                <element signature="e#1196#1197#0" expanded="true" />
-                <element signature="e#1230#1231#0" expanded="true" />
-                <element signature="e#1275#1276#0" expanded="true" />
-                <element signature="e#1310#1311#0" expanded="true" />
-                <element signature="e#1372#1373#0" expanded="true" />
-                <element signature="e#1420#1421#0" expanded="true" />
-                <element signature="e#1463#1464#0" expanded="true" />
-                <element signature="e#1497#1498#0" expanded="true" />
-                <element signature="e#1556#1557#0" expanded="true" />
-                <element signature="e#1602#1603#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/ContactType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/DescendingByName.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+            <state relative-caret-position="45">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/DescendingByNameContact.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/DescendingByEmail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -214,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/comp330/phonebook/DescendingByEmail.java" />
         <option value="$PROJECT_DIR$/src/comp330/PhonebookApp/PhoneBook.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/Main.java" />
-        <option value="$PROJECT_DIR$/src/cp330/phonebook/DescendingByName.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/DescendingByEmail.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/DescendingByNameContact.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/IPhoneBook.java" />
@@ -222,6 +190,7 @@
         <option value="$PROJECT_DIR$/src/cp330/phonebook/RingtoneType.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/ContactType.java" />
         <option value="$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java" />
+        <option value="$PROJECT_DIR$/src/cp330/phonebook/DescendingByName.java" />
       </list>
     </option>
   </component>
@@ -232,8 +201,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="87" />
-    <option name="y" value="23" />
+    <option name="x" value="141" />
+    <option name="y" value="88" />
     <option name="width" value="816" />
     <option name="height" value="877" />
   </component>
@@ -301,7 +270,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544851971700" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544887621693" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -373,7 +342,7 @@
       <workItem from="1542477721370" duration="1601000" />
       <workItem from="1543538695042" duration="298000" />
       <workItem from="1543539039724" duration="4033000" />
-      <workItem from="1543613979447" duration="39080000" />
+      <workItem from="1543613979447" duration="41552000" />
     </task>
     <task id="LOCAL-00001" summary="updates in order to add alphabetization listing">
       <created>1544758400768</created>
@@ -494,17 +463,23 @@
       <option name="project" value="LOCAL" />
       <updated>1544851186115</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fixing more issues">
+      <created>1544851988352</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1544851988352</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82420000" />
+    <option name="totallyTimeSpent" value="84892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.29328164" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16237482" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -558,7 +533,8 @@
     <MESSAGE value="updating help menu options" />
     <MESSAGE value="fixing issues as I am testing situations" />
     <MESSAGE value="fixing issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing issues" />
+    <MESSAGE value="fixing more issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing more issues" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Contact.java" />
@@ -570,16 +546,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/.name">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/DescendingByEmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -590,17 +556,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/IPhoneBook.java">
+    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/RingtoneType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/ContactType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4275">
+          <caret line="285" column="53" lean-forward="true" selection-start-line="285" selection-start-column="53" selection-end-line="285" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#12849#12850#0" expanded="true" />
+            <element signature="e#12894#12895#0" expanded="true" />
+            <element signature="e#12931#12932#0" expanded="true" />
+            <element signature="e#13014#13015#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="181">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
             <element signature="e#830#831#0" expanded="true" />
             <element signature="e#864#865#0" expanded="true" />
@@ -626,52 +613,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/DescendingByNameContact.java">
+    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/IPhoneBook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/RingtoneType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/ContactType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+        <state relative-caret-position="1260">
+          <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/DescendingByName.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+        <state relative-caret-position="45">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/DescendingByEmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/PhoneBook.java">
+    <entry file="file://$PROJECT_DIR$/src/cp330/phonebook/DescendingByNameContact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2196">
-          <caret line="166" column="60" lean-forward="true" selection-start-line="166" selection-start-column="60" selection-end-line="166" selection-end-column="60" />
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10444#10445#0" expanded="true" />
-            <element signature="e#10489#10490#0" expanded="true" />
-            <element signature="e#12781#12782#0" expanded="true" />
-            <element signature="e#12864#12865#0" expanded="true" />
           </folding>
         </state>
       </provider>
