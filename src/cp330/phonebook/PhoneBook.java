@@ -163,7 +163,7 @@ public class PhoneBook implements IPhoneBook {
         System.out.println("help - Displays Application Help Menu");
         System.out.println("list - List All Phonebook Entries by Group. If Category Is Not Provided Entire Phonebook Is Listed");
         System.out.println("remove - Removes Phone Number Entry From Phonebook");
-        System.out.println("show - Prints Provided Phone Number Entry");
+        System.out.println("show - Prints Contact Entry Based On Phone Number Inputted");
         System.out.println("search - Search For Entry By Name");
         System.out.println("sortName - Sorts Contact By Name");
         System.out.println("sortEmail - Sorts Contact By Email");
@@ -325,7 +325,7 @@ public class PhoneBook implements IPhoneBook {
     public void addRingtone(String command) {
         String[] s = splitCommand(command);
         if (s.length != 3) {
-            System.out.println("Incorrect command format. Command should be in format 'addEmail RINGTONE(ding, chord, pulse, none) PHONE_NUMBER'");
+            System.out.println("Incorrect command format. Correct Format: addRingtone (ding, chord, pulse, none) PHONE_NUMBER");
             return;
         }
         String ringtone = s[1];
