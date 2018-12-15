@@ -156,7 +156,7 @@ public class PhoneBook implements IPhoneBook {
         System.out.println("Available Commands:");
         System.out.println("save - Saves Phonebook Entries To File ");
         System.out.println("load - Loads Phonebook Entries From File");
-        System.out.println("add - Adds Name + Phone Number TO Phonebook");
+        System.out.println("add - Adds Name + Phone Number To Phonebook");
         System.out.println("addGroup - Adds Category to Contact Entry ");
         System.out.println("addRingtone - Adds Ringtone (ding, chord, pulse) To Entry");
         System.out.println("addEmail - Adds Email To Entry");
