@@ -25,6 +25,7 @@ public class PhoneBook implements IPhoneBook {
         friends = new ArrayList<>();
         colleagues = new ArrayList<>();
     }
+
     @Override
     public void processCommand(String line) throws FileNotFoundException {
         String command = line.split("\\s+")[0];
@@ -72,9 +73,9 @@ public class PhoneBook implements IPhoneBook {
                 System.out.println("Unknown command. Type help for list of valid commands.");
                 break;
         }
-        }
+    }
 
-        @Override
+    @Override
     public void saveToFile() throws FileNotFoundException {
         try (PrintWriter out = new PrintWriter("phonebook.rtf")) {
             Iterator it = contacts.entrySet().iterator();
@@ -82,7 +83,7 @@ public class PhoneBook implements IPhoneBook {
                 Map.Entry<String, Contact> pair = (Map.Entry) it.next();
                 System.out.println(pair.getValue().toStringForFile());
             }
-    }
+        }
         System.out.println("Phonebook Saved");
     }
 
@@ -116,59 +117,59 @@ public class PhoneBook implements IPhoneBook {
         String phoneNumber = s[2];
         createAndAddContact(phoneNumber, name, "n/a", RingtoneType.none, ContactType.none);
 
-        }
+    }
 
 
-         private void createAndAddContact(String phoneNumber, String name, String email, RingtoneType ringtone, ContactType contactType) {
+    private void createAndAddContact(String phoneNumber, String name, String email, RingtoneType ringtone, ContactType contactType) {
 
-             Contact contact = new Contact(phoneNumber, name, email, ringtone, contactType);
-             contacts.put(phoneNumber, contact);
-             addToGroup(contact);
-         }
+        Contact contact = new Contact(phoneNumber, name, email, ringtone, contactType);
+        contacts.put(phoneNumber, contact);
+        addToGroup(contact);
+    }
 
-         private void addToGroup(Contact contact) {
-            if (contact.getContactType() != null) {
-                switch (contact.getContactType()) {
-                    case friends:
-                        friends.add(contact);
-                        Collections.sort(friends, new DescendingByNameContact());
-                        break;
-                    case family:
-                        family.add(contact);
-                        Collections.sort(family, new DescendingByNameContact());
-                        break;
-                    case colleagues:
-                        colleagues.add(contact);
-                        Collections.sort(colleagues, new DescendingByNameContact());
-                        break;
-                    default:
-                        break;
-                }
+    private void addToGroup(Contact contact) {
+        if (contact.getContactType() != null) {
+            switch (contact.getContactType()) {
+                case friends:
+                    friends.add(contact);
+                    Collections.sort(friends, new DescendingByNameContact());
+                    break;
+                case family:
+                    family.add(contact);
+                    Collections.sort(family, new DescendingByNameContact());
+                    break;
+                case colleagues:
+                    colleagues.add(contact);
+                    Collections.sort(colleagues, new DescendingByNameContact());
+                    break;
+                default:
+                    break;
             }
-         }
-
+        }
+    }
 
 
     @Override
     public void help() {
-            System.out.println("========Phonebook Menu========");
-            System.out.println("Available Commands:");
-            System.out.println("save - Saves Phonebook Entries To File ");
-            System.out.println("load - Loads Phonebook Entries From File");
-            System.out.println("add phone name email ringtone contactType(family, friends, colleagues) - Adds phone number to phonebook");
-            System.out.println("help - Displays Application Help Menu");
-            System.out.println("list group - List All Phhonebook Entries by Category. If Category Is Not Provided Entire Phonebook Is Listed");
-            System.out.println("remove phone - Removes Entry From Phonebook");
-            System.out.println("show phone - Prints Provided Phone Numer Entry");
-            System.out.println("search name - Search For Entry By Name");
-            System.out.println("sortName - Sorts Contact By Name");
-            System.out.println("sortEmail - Sorts Contact By Email");
+        System.out.println("========Phonebook Menu========");
+        System.out.println("Available Commands:");
+        System.out.println("save - Saves Phonebook Entries To File ");
+        System.out.println("load - Loads Phonebook Entries From File");
+        System.out.println("add phone name email ringtone contactType(family, friends, colleagues) - Adds phone number to phonebook");
+        System.out.println("help - Displays Application Help Menu");
+        System.out.println("list group - List All Phhonebook Entries by Category. If Category Is Not Provided Entire Phonebook Is Listed");
+        System.out.println("remove phone - Removes Entry From Phonebook");
+        System.out.println("show phone - Prints Provided Phone Numer Entry");
+        System.out.println("search name - Search For Entry By Name");
+        System.out.println("sortName - Sorts Contact By Name");
+        System.out.println("sortEmail - Sorts Contact By Email");
 
     }
 
     @Override
     public void list(String command) {
         String[] s = splitCommand(command);
+        displayHeaders();
         if (s.length == 1) {
             sortName();
         } else {
@@ -188,13 +189,13 @@ public class PhoneBook implements IPhoneBook {
             }
         }
 
-        }
+    }
 
-        private void printList(List<Contact> list) {
-            for (Contact contact: list) {
-                System.out.println(contact);
-            }
+    private void printList(List<Contact> list) {
+        for (Contact contact : list) {
+            System.out.println(contact);
         }
+    }
 
 
     @Override
@@ -211,7 +212,7 @@ public class PhoneBook implements IPhoneBook {
         } else {
             // removing from the phonebook
             contacts.remove(phoneNumber);
-            // removing from specific category
+            // removing from specific group
             switch (contact.getContactType().toString()) {
                 case "friends":
                     friends.remove(contact);
@@ -223,10 +224,11 @@ public class PhoneBook implements IPhoneBook {
                     colleagues.remove(contact);
                     break;
                 default:
-                    System.out.println("Unexpected Error. Unknown Contact Category");
+                    System.out.println("Unexpected Error. Unknown Contact Group");
             }
         }
     }
+
 
 
 
