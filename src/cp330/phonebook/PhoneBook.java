@@ -70,7 +70,7 @@ public class PhoneBook implements IPhoneBook {
                 addGroup(line);
                 break;
             default:
-                System.out.println("Unknown command. Type help for list of valid commands.");
+                System.out.println("Unknown command. Type help For LIst Of Valid Commands.");
                 break;
         }
     }
@@ -110,7 +110,7 @@ public class PhoneBook implements IPhoneBook {
         String[] s = splitCommand(command);
         //expect properly formed command of 3 strings
         if (s.length != 3) {
-            System.out.println("Incorrect command format. Command should be in format 'add NAME PHONE_NUMBER)'");
+            System.out.println("Incorrect Command Format. Command Should Be In Format 'add NAME PHONE_NUMBER)'");
             return;
         }
         String name = s[1];
@@ -156,17 +156,17 @@ public class PhoneBook implements IPhoneBook {
         System.out.println("Available Commands:");
         System.out.println("save - Saves Phonebook Entries To File ");
         System.out.println("load - Loads Phonebook Entries From File");
-        System.out.println("add - Adds Name + Phone Number to Phonebook");
-        System.out.println("addGroup - Adds Category to Entry ");
-        System.out.println("addRingtone - Adds RingtoneEither ding, chord, pulse to entry");
-        System.out.println("addEmail - Adds email to entry");
+        System.out.println("add - Adds Name + Phone Number TO Phonebook");
+        System.out.println("addGroup - Adds Category to Contact Entry ");
+        System.out.println("addRingtone - Adds Ringtone (ding, chord, pulse) To Entry");
+        System.out.println("addEmail - Adds Email To Entry");
         System.out.println("help - Displays Application Help Menu");
-        System.out.println("list - List All Phonebook Entries by Group. If Category Is Not Provided Entire Phonebook Is Listed");
+        System.out.println("list - List All Phonebook Entries by Category. If Category Is Not Provided, Entire Phonebook Is Listed");
         System.out.println("remove - Removes Phone Number Entry From Phonebook");
         System.out.println("show - Prints Contact Entry Based On Phone Number Inputted");
         System.out.println("search - Search For Entry By Name");
-        System.out.println("sortName - Sorts Contact By Name");
-        System.out.println("sortEmail - Sorts Contact By Email");
+        System.out.println("sortName - Sorts Contacts By Name");
+        System.out.println("sortEmail - Sorts Contacts By Email");
 
     }
 
@@ -206,13 +206,13 @@ public class PhoneBook implements IPhoneBook {
     public void remove(String command) {
         String[] s = splitCommand(command);
         if (s.length != 2) {
-            System.out.println("Incorrect command format. Command should be in format 'remove PHONE_NUMBER' ");
+            System.out.println("Incorrect Command Format. Command Should Be In Format 'remove PHONE_NUMBER' ");
             return;
         }
         String phoneNumber = s[1];
         Contact contact = contacts.get(phoneNumber);
         if (contact == null) {
-            System.out.println("Attempted to delete contact that does not exist");
+            System.out.println("Attempted To Delete Contact That Does Not Exist");
         } else {
             // removing from the phonebook
             contacts.remove(phoneNumber);
@@ -242,7 +242,7 @@ public class PhoneBook implements IPhoneBook {
     public void show(String command) {
         String[] s = splitCommand(command);
         if (s.length != 2) {
-            System.out.println("Incorrect command format. Command should be in format 'show PHONE_NUMBER'");
+            System.out.println("Incorrect Command Format. Command Should Be In Format 'show PHONE_NUMBER'");
             return;
         }
         String phoneNumber = s[1];
@@ -260,7 +260,7 @@ public class PhoneBook implements IPhoneBook {
     public void search(String command) {
         String[] s = splitCommand(command);
         if (s.length != 2) {
-            System.out.println("Incorrect command format. Command should be in format 'search NAME'");
+            System.out.println("Incorrect Command Format. Command Should Be In Format 'search NAME'");
             return;
         }
         String searchTerm = s[1];
@@ -303,7 +303,7 @@ public class PhoneBook implements IPhoneBook {
     public void addGroup(String command) {
         String[] s = splitCommand(command);
         if (s.length != 3) {
-            System.out.println("Incorrect command format. Correct format: addGroup Category Phone Number ");
+            System.out.println("Incorrect Command Format. Correct Format: addGroup Category Phone Number ");
             return;
         }
         String contactType = s[1];
@@ -319,7 +319,7 @@ public class PhoneBook implements IPhoneBook {
                 System.out.println("Unknown Category. Available Categories: family, friends, colleagues, none");
             }
         } else {
-            System.out.println("Failed to find contact with Phone Number: " + phoneNumber);
+            System.out.println("Failed To Find Contact With Phone Number: " + phoneNumber);
         }
     }
 
@@ -327,7 +327,7 @@ public class PhoneBook implements IPhoneBook {
     public void addRingtone(String command) {
         String[] s = splitCommand(command);
         if (s.length != 3) {
-            System.out.println("Incorrect command format. Correct Format: addRingtone (ding, chord, pulse, none) PHONE_NUMBER");
+            System.out.println("Incorrect Command Format. Correct Format: addRingtone (ding, chord, pulse, none) PHONE_NUMBER");
             return;
         }
         String ringtone = s[1];
@@ -342,7 +342,7 @@ public class PhoneBook implements IPhoneBook {
                 System.out.println("Unknown Type. Available Ringtones: ding, chord, pulse, none");
             }
         } else {
-            System.out.println("Failed to find contact with phoneNumber: " + phoneNumber);
+            System.out.println("Failed To Find Contact With Phone Number: " + phoneNumber);
         }
     }
 
@@ -350,7 +350,7 @@ public class PhoneBook implements IPhoneBook {
     public void addEmail(String command) {
         String[] s = splitCommand(command);
         if (s.length != 3) {
-            System.out.println("Incorrect command format. Command should be in format 'addEmail EMAIL PHONE_NUMBER)'");
+            System.out.println("Incorrect Command Format. Correct Format: 'addEmail EMAIL PHONE_NUMBER)'");
             return;
         }
         String email = s[1];
