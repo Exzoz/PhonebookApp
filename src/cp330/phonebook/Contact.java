@@ -16,28 +16,28 @@ public class Contact {
     }
 
     public String toString() {
-        return "Contact: Phone Number=" + phoneNumber + "; name=" + name + "; email=" + email + "; ringtone=" + ringtone + "; contactType=" + contactType;
+        return name + " " + phoneNumber + " " + " "  + email + " " + ringtoneType  + " " + contactType;
     }
 
     public String toStringForFile() {
-        return phoneNumber + "," + name + "," + email + "," + ringtone + "," + contactType;
+        return phoneNumber + "," + name + "," + email + "," + ringtoneType + "," + contactType;
     }
 
     public String getPhoneNumber() {
-            return phoneNumber;
-        }
+        return phoneNumber;
+    }
 
-        public void setPhoneNumber(String phoneNumber){
-            this.phoneNumber = phoneNumber;
-        }
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
 
-        public String getName() {
-            return name;
-        }
+    public String getName() {
+        return name;
+    }
 
-        public void setName(String name) {
-            this.name = name;
-        }
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String getEmail() {
         return email;
@@ -55,13 +55,11 @@ public class Contact {
         this.ringtoneType = ringtoneType;
     }
 
-
     public ContactType getContactType() {
-            return contactType;
-        }
+        return contactType;
+    }
 
     public void setContactType(ContactType contactType) {
         this.contactType = contactType;
     }
-
-    }
+}
